@@ -33,9 +33,9 @@ search: true
 author:
   name: "Raphael"
   avatar: "https://avatars.githubusercontent.com/u/32976542"
-  bio: "Aspiring Software Developer"
+  bio: "Learning on the go"
   links:
-    - label: "raphhh21"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/raphhh21"
 
@@ -69,13 +69,13 @@ defaults:
       path: ""
       type: posts
     values:
-        layout: single
-        read_time: true
-        show_date: true
-        author_profile: true
-        share: false
-        comments: false
-        related: true
+      layout: single
+      read_time: true
+      show_date: true
+      author_profile: true
+      share: false
+      comments: false
+      related: true
   # for pages
   - scope:
       path: "_pages"
@@ -83,6 +83,21 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # for portfolio
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+# portfolio
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
